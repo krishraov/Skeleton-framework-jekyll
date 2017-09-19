@@ -8,7 +8,7 @@ title : Home
       <div class="one-half column" style="margin-top: 25%">
         <h4>Basic Page</h4>
         {% for post in site.posts limit:5%}
-              <h2 class="post_title"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title}}</a></h2>
+              <h4 class="post_title"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title}}</a></h4>
               <time class="post_date">{{ post.date | date: "%d %B %Y, %A" }}</time>
         {% endfor %}
       </div>
